@@ -156,7 +156,7 @@ def main():
 		#if main_hour[2]==50:#Reset the day_alert_flag
 			#day_alert_flag=False
 			#print("FLAG RESETEADA A FALSE")
-		if (main_hour[0]==9 and main_hour[1]==30 and main_hour[2]==00) or (main_hour[0]==18 and main_hour[1]==30 and main_hour[2]==00) :
+		if (main_hour[0]==9 and main_hour[1]==30 and main_hour[2]==00) or (main_hour[0]==12 and main_hour[1]==00 and main_hour[2]==00) or (main_hour[0]==18 and main_hour[1]==30 and main_hour[2]==00) :
 		#if main_hour[2]==00: #and main_hour[2]==00 :# and main_hour[2]==00:
 				#day_alert_flag=True #This day the alert is done
 
