@@ -1,0 +1,17 @@
+Telegram bot-Madrid polution
+
+This bot shows the NO2 polution levels of Madrid
+
+It takes the data from the govern of Madrid official website: http://www.mambiente.munimadrid.es/opencms/opencms/calaire/consulta/Gases_y_particulas/informegaseshorarios.html?__locale=es
+
+You we'll need a extra "config" file with the structure:
+
+[bot]
+name= Nombre de tu Bot
+token= Tu TOKEN
+
+This bot is based on the previous work of Almudena Sanz, Pablo Clemente y David Estevez
+
+More info on:
+
+http://diwo.bq.com/zowi-telegram-bot/
