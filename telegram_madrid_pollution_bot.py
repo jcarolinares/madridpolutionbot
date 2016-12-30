@@ -1,6 +1,6 @@
 #####################################################################################################################
 ##
-## Madrid polution bot - Telegram Bot to know the N02 values of Madrid polution
+## Madrid pollution bot - Telegram Bot to know the N02 values of Madrid pollution
 ##
 #####################################################################################################################
 
@@ -46,9 +46,9 @@ def save_log(id, update_id, chat_id, text):
 
 ### JukeBot things #######################################
 def send_keyboard(bot, user_id):
-    keyboard_layout = [['/polution']]
+    keyboard_layout = [['/pollution']]
     reply_markup = ReplyKeyboardMarkup.create(keyboard_layout)
-    bot.send_message(user_id, 'Este bot te muestra la contaminacion en Madrid!\n Usa /polution', reply_markup=reply_markup)
+    bot.send_message(user_id, 'Este bot te muestra la contaminacion en Madrid!\n Usa /pollution', reply_markup=reply_markup)
 
 def get_user_name(user, show_last_name = 0, show_all_info = 0):
 
@@ -216,6 +216,9 @@ def main():
 					print(station_name[-2]+": "+str(no2data[-1])+" microgramos/metro cubico")
 					for x in chat_id:
 						bot.send_message(x, station_name[-2]+": "+str(no2data[-1])+" microgramos/metro cubico")
+
+
+
                 if int(update_id) > last_id:
                     last_id = update_id
                     save_last_id(last_id)
@@ -239,7 +242,7 @@ def main():
 				send_keyboard(bot, active_chat_id)
 				#send_keyboard(bot, chat_id)
 				#send_keyboard(bot, chat_id2)
-                            elif word == '/polution':
+                            elif word == '/pollution':
 				#Acceso al html
 				d = pq(url='http://www.mambiente.munimadrid.es/opencms/opencms/calaire/consulta/Gases_y_particulas/informegaseshorarios.html?__locale=es')
 
